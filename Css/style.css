@@ -455,3 +455,127 @@ section {
     justify-content: space-between;
     font-size: 16px;
 }
+
+.home_product_section {
+    height: 550px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    outline: 2px dashed black;
+}
+
+.home_product_container {
+    width: 100%;
+    max-width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    outline: 1px solid black;
+}
+
+.home_product_header {
+    width: 100%;
+    height: 80px;
+    outline: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#best_seller_container {
+    width: 1170px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home_product_item {
+    width: 290px;
+    height: 400px;
+    padding: 0px 15px;
+    outline: 1px solid black;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.home_ads_section {
+    background: #f3f2ee;
+    overflow: hidden;
+    padding-top: 150px;
+    padding-bottom: 125px;
+}
+
+.home_ads_container {
+    width: 100%;
+    max-width: 1170px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    outline: 1px solid black;
+}
+
+.ads_categories {
+    width: 260px;
+    height: 300px;
+    position: relative;
+    outline: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.figure {
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    right: 130px;
+}
+
+.ads_categories_list {
+    width: 100%;
+    height: 216px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 5;
+}
+
+.ads_categories_list li {
+    font-size: 34px;
+    color: #b7b7b7;
+    font-weight: 700;
+}
+
+.selected_ads {
+    color: #111111 !important;
+}
+
+.ads_img {
+    width: 390px;
+    height: 340px;
+    outline: 1px solid black;
+    position: relative;
+}
+
+.ads_img img {
+    width: 360px;
+    height: 314px;
+    object-fit: cover;
+}
+
+.circle {
+    width: 75px;
+    height: 75px;
+    background-color: #111111;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 15;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    color: white;
+
+}

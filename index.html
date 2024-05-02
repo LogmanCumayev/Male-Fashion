@@ -1,233 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="./Css/style.css">
-        <link rel="stylesheet" href="./Css/layout.css">
-        <link rel="stylesheet" href="./Css/responsive.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- Link Swiper Css -->
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/layout.css">
+    <link rel="stylesheet" href="./Css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    </head>
+</head>
 
-    <body>
-        <header>
-            <div class="nav_container">
-                <div class="logo">
-                    <img src="./İmg/home_img/logo.png.webp">
-                </div>
+<body>
+    <header>
+        <div class="nav_container">
+            <div class="logo">
+                <img src="./İmg/home_img/logo.png.webp">
+            </div>
 
-                <div class="nav">
-                    <ul class="nav_list">
-                        <li><a href="#"><span
-                                    class="hover-underline-animation active">Əsas
-                                    Səhifə</span> </a></li>
-                        <li><a href="#"><span
-                                    class="hover-underline-animation">Mağaza</span></a></li>
-                        <li><a href="#"><span
-                                    class="hover-underline-animation">Hakkımızda</span></a></li>
-                        <li><a href="#"><span
-                                    class="hover-underline-animation">Blog</span></a></li>
-                        <li><a href="#"><span
-                                    class="hover-underline-animation">Əlaqə</span></a></li>
+            <div class="nav">
+                <ul class="nav_list">
+                    <li><a href="#"><span class="hover-underline-animation active">Əsas
+                                Səhifə</span> </a></li>
+                    <li><a href="#"><span class="hover-underline-animation">Mağaza</span></a></li>
+                    <li><a href="#"><span class="hover-underline-animation">Hakkımızda</span></a></li>
+                    <li><a href="#"><span class="hover-underline-animation">Blog</span></a></li>
+                    <li><a href="#"><span class="hover-underline-animation">Əlaqə</span></a></li>
+                </ul>
+            </div>
+            <div class="menu_container">
+                <div class="menu_container_others">
+                    <ul>
+                        <li>
+                            <button onclick="hideSidebar()"><i class="fa-solid fa-xmark"></i></button>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-heart"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </li>
                     </ul>
                 </div>
-                <div class="menu_container">
-                    <div class="menu_container_others">
-                        <ul>
-                            <li>
-                                <button onclick="hideSidebar()"><i
-                                        class="fa-solid fa-xmark"></i></button>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-heart"></i>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-bag-shopping"></i>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="menu_container_list">
-                        <ul>
-                            <li><a href="/index.html"><span
-                                        class="hover-underline-animation active">Əsas
-                                        Səhifə</span> </a></li>
-                            <li><a href="#"><span
-                                        class="hover-underline-animation">Mağaza</span></a></li>
-                            <li><a href="#"><span
-                                        class="hover-underline-animation">Hakkımızda</span></a></li>
-                            <li><a href="#"><span
-                                        class="hover-underline-animation">Blog</span></a></li>
-                            <li><a href="#"><span
-                                        class="hover-underline-animation">Əlaqə</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="others">
-                    <div class="menu_button">
-                        <button onclick="showSidebar()"><i
-                                class="fa-solid fa-bars"></i></button>
-                    </div>
-                    <div class="search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    <div class="favorite">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="cart">
-                        <i class="fa-solid fa-bag-shopping"></i>
-                        <span>
-                            0.00AZN
-                        </span>
-                    </div>
+                <div class="menu_container_list">
+                    <ul>
+                        <li><a href="/index.html"><span class="hover-underline-animation active">Əsas
+                                    Səhifə</span> </a></li>
+                        <li><a href="#"><span class="hover-underline-animation">Mağaza</span></a></li>
+                        <li><a href="#"><span class="hover-underline-animation">Hakkımızda</span></a></li>
+                        <li><a href="#"><span class="hover-underline-animation">Blog</span></a></li>
+                        <li><a href="#"><span class="hover-underline-animation">Əlaqə</span></a></li>
+                    </ul>
                 </div>
             </div>
-        </header>
 
-        <section class="slider_section">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./İmg/home_img/slider_img/hero-1.jpg.webp" />
-                        <div class="swiper-slide_content">
-                            <div class="swiper-slide_content_info">
-                                <span>Yay Kolleksiyası</span>
-                                <h2>Payız-Qış kolleksiyaları 2030</h2>
-                                <p>Lüks əsas əşyalar yaradan mütəxəssis etiket.
-                                    Etik cəhətdən sarsılmaz bir şəkildə
-                                    hazırlanmışdır
-                                    müstəsna keyfiyyətə sadiqlik.</p>
-                                <button>
-                                    Indi Al<i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                            </div>
-                            <div class="swiper-slide_content_social_media">
-                                <ul>
-                                    <li><i class="fa-brands fa-facebook-f"></i></li>
-                                    <li><i class="fa-brands fa-twitter"></i></li>
-                                    <li><i class="fa-brands fa-pinterest"></i></li>
-                                    <li><i class="fa-brands fa-instagram"></i></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./İmg/home_img/slider_img/hero-2.jpg.webp" />
-                        <div class="swiper-slide_content">
-                            <div class="swiper-slide_content_info">
-                                <span>Yay Kolleksiyası</span>
-                                <h2>Payız-Qış kolleksiyaları 2030</h2>
-                                <p>Lüks əsas əşyalar yaradan mütəxəssis etiket.
-                                    Etik cəhətdən sarsılmaz bir şəkildə
-                                    hazırlanmışdır
-                                    müstəsna keyfiyyətə sadiqlik.</p>
-                                <button>
-                                    Indi Al<i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                            </div>
-                            <div class="swiper-slide_content_social_media">
-                                <ul>
-                                    <li><i class="fa-brands fa-facebook-f"></i></li>
-                                    <li><i class="fa-brands fa-twitter"></i></li>
-                                    <li><i class="fa-brands fa-pinterest"></i></li>
-                                    <li><i class="fa-brands fa-instagram"></i></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <div class="others">
+                <div class="menu_button">
+                    <button onclick="showSidebar()"><i class="fa-solid fa-bars"></i></button>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="favorite">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>
+                        0.00AZN
+                    </span>
+                </div>
             </div>
-        </section>
+        </div>
+    </header>
 
-        <section class="items_show_section">
-            <div class="items_show_container">
-                <div class="items_show_clothes">
-                    <div class="clothes_img">
-                        <img src="./İmg/home_img/items_show/clothes.webp"
-                            alt="clothes">
-                        <div class="clothes_content">
-                            <h2>Geyim Kolleksiyası 2030</h2>
-                            <button>Indi Al</button>
+    <section class="slider_section">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./İmg/home_img/slider_img/hero-1.jpg.webp" />
+                    <div class="swiper-slide_content">
+                        <div class="swiper-slide_content_info">
+                            <span>Yay Kolleksiyası</span>
+                            <h2>Payız-Qış kolleksiyaları 2030</h2>
+                            <p>Lüks əsas əşyalar yaradan mütəxəssis etiket.
+                                Etik cəhətdən sarsılmaz bir şəkildə
+                                hazırlanmışdır
+                                müstəsna keyfiyyətə sadiqlik.</p>
+                            <button>
+                                Indi Al<i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        <div class="swiper-slide_content_social_media">
+                            <ul>
+                                <li><i class="fa-brands fa-facebook-f"></i></li>
+                                <li><i class="fa-brands fa-twitter"></i></li>
+                                <li><i class="fa-brands fa-pinterest"></i></li>
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="items_show_glass">
-                    <div class="glass_img">
-                        <img src="./İmg/home_img/items_show/glass.webp"
-                            alt="glass">
-                        <div class="glass_content">
-                            <h2>Eynek Kolleksiyası</h2>
+                <div class="swiper-slide">
+                    <img src="./İmg/home_img/slider_img/hero-2.jpg.webp" />
+                    <div class="swiper-slide_content">
+                        <div class="swiper-slide_content_info">
+                            <span>Yay Kolleksiyası</span>
+                            <h2>Payız-Qış kolleksiyaları 2030</h2>
+                            <p>Lüks əsas əşyalar yaradan mütəxəssis etiket.
+                                Etik cəhətdən sarsılmaz bir şəkildə
+                                hazırlanmışdır
+                                müstəsna keyfiyyətə sadiqlik.</p>
+                            <button>
+                                Indi Al<i class="fa-solid fa-arrow-right"></i>
+                            </button>
                         </div>
-                    </div>
-                </div>
-                <div class="items_show_shoes">
-                    <div class="shoes_img">
-                        <img src="./İmg/home_img/items_show/shoes.webp"
-                            alt="shoes">
-                        <div class="shoes_content">
-                            <h2>Ayaqqabı Kolleksiyası</h2>
+                        <div class="swiper-slide_content_social_media">
+                            <ul>
+                                <li><i class="fa-brands fa-facebook-f"></i></li>
+                                <li><i class="fa-brands fa-twitter"></i></li>
+                                <li><i class="fa-brands fa-pinterest"></i></li>
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
 
-        <section class="home_product_section">
-            <div class="home_product_container">
-                <div class="home_product_header"></div>
-                <div class="home_product_body">
-                    <div class="best_seller_container"></div>
-                    <div class></div>
+    <section class="items_show_section">
+        <div class="items_show_container">
+            <div class="items_show_clothes">
+                <div class="clothes_img">
+                    <img src="./İmg/home_img/items_show/clothes.webp" alt="clothes">
+                    <div class="clothes_content">
+                        <h2>Geyim Kolleksiyası 2030</h2>
+                        <button>Indi Al</button>
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="items_show_glass">
+                <div class="glass_img">
+                    <img src="./İmg/home_img/items_show/glass.webp" alt="glass">
+                    <div class="glass_content">
+                        <h2>Eynek Kolleksiyası</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="items_show_shoes">
+                <div class="shoes_img">
+                    <img src="./İmg/home_img/items_show/shoes.webp" alt="shoes">
+                    <div class="shoes_content">
+                        <h2>Ayaqqabı Kolleksiyası</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Menu Script -->
-        <script>
-            function showSidebar() {
-                const sidebar=document.querySelector('.menu_container')
-                sidebar.style.top="20px"
-            }
-            function hideSidebar() {
-                const sidebar=document.querySelector('.menu_container')
-                sidebar.style.top="-400px"
-            }
-        </script>
+    <section class="home_product_section">
+        <div class="home_product_container">
+            <div class="home_product_header">
+                <ul>
+                    <li class=""><button onclick=""><span>Best Seller</span></button></li>
+                    <li class=""><button onclick=""><span>New Arrivals</span></button></li>
+                    <li class=""><button onclick=""><span>Hot Seller</span></button></li>
+                </ul>
+            </div>
 
-        <!-- Swiper JS -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <div id="best_seller_container">
+                <div class="home_product_item"></div>
+                <div class="home_product_item"></div>
+                <div class="home_product_item"></div>
+                <div class="home_product_item"></div>
+            </div>
+            <div id="new_arrivals_container" class="hidden"></div>
+            <div id="hot_sales_container" class="hidden"></div>
+        </div>
+    </section>
 
-        <!-- Initialize Swiper -->
-        <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      effect: "fade",
-      rewind: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
-    </body>
+    <section class="home_ads_section">
+        <div class="home_ads_container">
+            <div class="ads_categories">
+                <div class="figure"></div>
+                <ul class="ads_categories_list">
+                    <li><span>İsti Geyimlər</span></li>
+                    <li class="selected_ads"><span>Ayaqqabı Kolleksiyası</span></li>
+                    <li><span>Aksesuarlar </span></li>
+                </ul>
+            </div>
+            <div class="ads_img">
+                <img src="./İmg/home_img/home_ads/product-sale.png (1).webp" alt="">
+                <div class="circle"><span>29.99 AZN</span></div>
+
+            </div>
+            <div class="ads_content"></div>
+        </div>
+    </section>
+
+    <footer>
+        
+    </footer>
+
+    <!-- Menu Script -->
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.menu_container')
+            sidebar.style.top = "20px"
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.menu_container')
+            sidebar.style.top = "-400px"
+        }
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            rewind: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
 
 </html>
