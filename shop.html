@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./Css/style.css">
+        <link rel="stylesheet" href="./Css/layout.css">
+        <link rel="stylesheet" href="./Css/responsive.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <div class="header_top_container">
+                <div class="header_top">
+                    <div class="header_top_content col-lg-6 col-md-7">
+                        <p>
+                            Pulsuz çatdırılma, 30 günlük qaytarma və ya geri
+                            qaytarma zəmanəti
+                        </p>
+                    </div>
+                    <div class="header_top_others col-lg-6 col-md-5">
+                        <ul>
+                            <li>Daxil olun</li>
+                            <li>FAQs</li>
+                            <li class="header_top_dropdown_li">AZN <i
+                                    class="fa-solid fa-angle-down"></i>
+                                <div class="header_top_dropdown_li_container">
+                                    <ul>
+                                        <li>USD</li>
+                                        <li>EUR</li>
+                                        <li>AZN</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="nav_container">
+                <div class="logo  col-md-3">
+                    <a href="./index.html">
+                        <img src="./İmg/home_img/logo.png.webp">
+                    </a>
+                </div>
+
+                <div class="nav col-md-6">
+                    <ul class="nav_list">
+                        <li><a href="./index.html"><span
+                                    class="hover-underline-animation  ">Əsas
+                                    Səhifə</span> </a></li>
+                        <li><a href="./shop.html"><span
+                                    class="hover-underline-animation active">Mağaza</span></a></li>
+                        <li><a href="./about.html"><span
+                                    class="hover-underline-animation ">Hakkımızda</span></a></li>
+                        <li><a href="./blog.html"><span
+                                    class="hover-underline-animation">Blog</span></a></li>
+                        <li><a href="./contact.html"><span
+                                    class="hover-underline-animation">Əlaqə</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="others col-md-3">
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span>
+                            <i class="fa-solid fa-manat-sign"></i>0.00
+                        </span>
+                    </div>
+                    <div class="menu_button">
+                        <button onclick="showSidebar()"><i
+                                class="fa-solid fa-bars"></i></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Menu Container -->
+        <section class="menu_section">
+            <div class="menu_container">
+                <div class="exit_button_container">
+                    <button onclick="hideSidebar()" class="exit_button">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="menu_container_top">
+                    <ul>
+                        <li>Daxil olun</li>
+                        <li>FAQs</li>
+                        <li class="header_top_dropdown_li">AZN <i
+                                class="fa-solid fa-angle-down"></i>
+                            <div class="header_top_dropdown_li_container">
+                                <ul>
+                                    <li>USD</li>
+                                    <li>EUR</li>
+                                    <li>AZN</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu_container_others">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-heart"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span>
+                                <i class="fa-solid fa-manat-sign"></i>0.00
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu_container_list">
+                    <ul>
+                        <li><a href="./index.html"><span
+                                    class="hover-underline-animation ">Əsas
+                                    Səhifə</span> </a></li>
+                        <li><a href="./shop.html"><span
+                                    class="hover-underline-animation active">Mağaza</span></a></li>
+                        <li><a href="./about.html"><span
+                                    class="hover-underline-animation ">Hakkımızda</span></a></li>
+                        <li><a href="./blog.html"><span
+                                    class="hover-underline-animation">Blog</span></a></li>
+                        <li><a href="./contact.html"><span
+                                    class="hover-underline-animation">Əlaqə</span></a></li>
+                    </ul>
+                </div>
+                <div class="menu_container_bottom">
+                    <p>
+                        Pulsuz çatdırılma, 30 günlük qaytarma və ya geri
+                        qaytarma zəmanəti
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about_link_container">
+            <div class="link_container">
+                <h2>Mağaza</h2>
+                <ul>
+                    <li><a class="selected_link" href="./index.html">Əsas Səhifə
+                            <i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a href="./shop.html">Mağaza </a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="shop_container">
+                <div class="filter_icon_open">
+                    <button onclick=openFilter()>
+                        <i class="fa-solid fa-filter"></i>
+                    </button>
+                </div>
+                <div class="shop_filter ">
+                    <div class="filter_icon_exit">
+                        <button onclick="closeFilter()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="filter_search">
+                        <input type="search" placeholder="Axtar...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="filter_categories filter_container">
+                        <button onclick=filter_categories_collapse()
+                            class="filter_top">
+                            <span>Kateqoriyalar</span>
+                            <span><i class="fa-solid fa-angle-down"></i></span>
+                        </button>
+                        <div id="filter_list">
+                            <ul>
+                                <li>Kişi(20)</li>
+                                <li>Qadın(20)</li>
+                                <li>Çantalar(20)</li>
+                                <li>Paltarlar(20)</li>
+                                <li>Ayaqqabılar(20)</li>
+                                <li>Aksesuarlar(20)</li>
+                                <li>Uşaq(20)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter_branding filter_container ">
+                        <button onclick=filter_branding_collapse()
+                            class="filter_top">
+                            <span>Brendlər</span>
+                            <span><i class="fa-solid fa-angle-down"></i></span>
+                        </button>
+                        <div id="filter_list">
+                            <ul>
+                                <li>Louis Vuitton</li>
+                                <li>Chanel</li>
+                                <li>Hermes</li>
+                                <li>Gucci</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter_price filter_container">
+                        <button onclick=filter_price_collapse()
+                            class="filter_top">
+                            <span>Qiymətlər</span>
+                            <span><i class="fa-solid fa-angle-down"></i></span>
+                        </button>
+                        <div id="filter_list">
+                            <ul>
+                                <li>0.00 - 50.00</li>
+                                <li>50.00 - 100.00</li>
+                                <li>100.00 - 150.00</li>
+                                <li>150.00 - 200.00</li>
+                                <li>200.00 - 250.00</li>
+                                <li>250.00+</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter_size filter_container">
+                        <button onclick=filter_size_collapse()
+                            class="filter_top">
+                            <span>Ölçülər</span>
+                            <span><i class="fa-solid fa-angle-down"></i></span>
+                        </button>
+                        <div class="filter_size_container">
+                            <div>XS</div>
+                            <div>S</div>
+                            <div>M</div>
+                            <div>XL</div>
+                            <div>2XL</div>
+                            <div>XXL</div>
+                            <div>3XL</div>
+                            <div>4XL</div>
+                        </div>
+                    </div>
+                    <div class="filter_color filter_container">
+                        <button onclick=filter_color_collapse()
+                            class="filter_top">
+                            <span>Rəng</span>
+                            <span><i class="fa-solid fa-angle-down"></i></span>
+                        </button>
+                        <div class="filter_color_circle">
+                            <div class="circle_black"></div>
+                            <div class="circle_blue"></div>
+                            <div class="circle_orange"></div>
+                            <div class="circle_gray"></div>
+                            <div class="circle_green"></div>
+                            <div class="circle_pink"></div>
+                            <div class="circle_purple"></div>
+                            <div class="circle_red"></div>
+                            <div class="circle_white"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="shop_product_container">
+                    <div class="shop_product_top">
+                        <span>126 nəticədən 1-12 arası göstərilir</span>
+                        <div class="filter_sort">
+                            <span>Qiymətə görə çeşidləyin:</span>
+                            <p>Aşağıdan Yüksəkə</p>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <div class="filter_sort_dropdown">
+                                <ul>
+                                    <li>Aşağıdan Yüksəkə</li>
+                                    <li>Yüksəkdən Aşağıya</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop_product_list">
+                        <div
+                            class="home_product_item col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="home_product_item_img">
+                                <img
+                                    src="./İmg/home_img/product_img/product-1.jpg.webp"
+                                    alt>
+                                <div class="product_tools">
+                                    <ul>
+                                        <li><i
+                                                class="fa-regular fa-heart"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-scale-unbalanced-flip"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-magnifying-glass"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="home_product_item_info_container">
+                                <div class="product_cart_button">
+                                    <a href>
+                                        + Səbətə Əlave Et
+                                    </a>
+                                </div>
+                                <div class="product_title">
+                                    <h6>
+                                        Piqué Biker Shoes
+                                    </h6>
+                                </div>
+                                <div class="product_rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product_price">
+                                    <span>
+                                        <i
+                                            class="fa-solid fa-manat-sign"></i>45.00
+                                    </span>
+                                </div>
+                                <div class="product_color">
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio blue"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio green"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio brown"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="home_product_item col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="home_product_item_img">
+                                <img
+                                    src="./İmg/home_img/product_img/product-2.jpg.webp"
+                                    alt>
+                                <div class="product_tools">
+                                    <ul>
+                                        <li><i
+                                                class="fa-regular fa-heart"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-scale-unbalanced-flip"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-magnifying-glass"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="home_product_item_info_container">
+                                <div class="product_cart_button">
+                                    <a href>
+                                        + Səbətə Əlave Et
+                                    </a>
+                                </div>
+                                <div class="product_title">
+                                    <h6>
+                                        Piqué Biker Jacket
+                                    </h6>
+                                </div>
+                                <div class="product_rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product_price">
+                                    <span>
+                                        <i
+                                            class="fa-solid fa-manat-sign"></i>67.99
+                                    </span>
+                                </div>
+                                <div class="product_color">
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio blue"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio green"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio brown"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="home_product_item col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="home_product_item_img">
+                                <img
+                                    src="./İmg/home_img/product_img/product-3.jpg.webp"
+                                    alt>
+                                <div class="product_tools">
+                                    <ul>
+                                        <li><i
+                                                class="fa-regular fa-heart"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-scale-unbalanced-flip"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-magnifying-glass"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="home_product_item_info_container">
+                                <div class="product_cart_button">
+                                    <a href>
+                                        + Səbətə Əlave Et
+                                    </a>
+                                </div>
+                                <div class="product_title">
+                                    <h6>
+                                        Nike BluePrince
+                                    </h6>
+                                </div>
+                                <div class="product_rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product_price">
+                                    <span>
+                                        <i
+                                            class="fa-solid fa-manat-sign"></i>105.50
+                                    </span>
+                                </div>
+                                <div class="product_color">
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio blue"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio green"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio brown"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="home_product_item col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="home_product_item_img">
+                                <img
+                                    src="./İmg/home_img/product_img/product-4.jpg.webp"
+                                    alt>
+                                <div class="product_tools">
+                                    <ul>
+                                        <li><i
+                                                class="fa-regular fa-heart"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-scale-unbalanced-flip"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-magnifying-glass"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="home_product_item_info_container">
+                                <div class="product_cart_button">
+                                    <a href>
+                                        + Səbətə Əlave Et
+                                    </a>
+                                </div>
+                                <div class="product_title">
+                                    <h6>
+                                        Polo Sweatshirt
+                                    </h6>
+                                </div>
+                                <div class="product_rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product_price">
+                                    <span>
+                                        <i
+                                            class="fa-solid fa-manat-sign"></i>36.00
+                                    </span>
+                                </div>
+                                <div class="product_color">
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio blue"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio green"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio brown"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="home_product_item col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="home_product_item_img">
+                                <img
+                                    src="./İmg/home_img/product_img/product-1.jpg.webp"
+                                    alt>
+                                <div class="product_tools">
+                                    <ul>
+                                        <li><i
+                                                class="fa-regular fa-heart"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-scale-unbalanced-flip"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-magnifying-glass"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="home_product_item_info_container">
+                                <div class="product_cart_button">
+                                    <a href>
+                                        + Səbətə Əlave Et
+                                    </a>
+                                </div>
+                                <div class="product_title">
+                                    <h6>
+                                        Piqué Biker Shoes
+                                    </h6>
+                                </div>
+                                <div class="product_rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product_price">
+                                    <span>
+                                        <i
+                                            class="fa-solid fa-manat-sign"></i>45.00
+                                    </span>
+                                </div>
+                                <div class="product_color">
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio blue"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio green"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio brown"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="home_product_item col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="home_product_item_img">
+                                <img
+                                    src="./İmg/home_img/product_img/product-2.jpg.webp"
+                                    alt>
+                                <div class="product_tools">
+                                    <ul>
+                                        <li><i
+                                                class="fa-regular fa-heart"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-scale-unbalanced-flip"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-magnifying-glass"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="home_product_item_info_container">
+                                <div class="product_cart_button">
+                                    <a href>
+                                        + Səbətə Əlave Et
+                                    </a>
+                                </div>
+                                <div class="product_title">
+                                    <h6>
+                                        Piqué Biker Jacket
+                                    </h6>
+                                </div>
+                                <div class="product_rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product_price">
+                                    <span>
+                                        <i
+                                            class="fa-solid fa-manat-sign"></i>67.99
+                                    </span>
+                                </div>
+                                <div class="product_color">
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio blue"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio green"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio brown"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="home_product_item col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="home_product_item_img">
+                                <img
+                                    src="./İmg/home_img/product_img/product-3.jpg.webp"
+                                    alt>
+                                <div class="product_tools">
+                                    <ul>
+                                        <li><i
+                                                class="fa-regular fa-heart"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-scale-unbalanced-flip"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-magnifying-glass"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="home_product_item_info_container">
+                                <div class="product_cart_button">
+                                    <a href>
+                                        + Səbətə Əlave Et
+                                    </a>
+                                </div>
+                                <div class="product_title">
+                                    <h6>
+                                        Nike BluePrince
+                                    </h6>
+                                </div>
+                                <div class="product_rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product_price">
+                                    <span>
+                                        <i
+                                            class="fa-solid fa-manat-sign"></i>105.50
+                                    </span>
+                                </div>
+                                <div class="product_color">
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio blue"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio green"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio brown"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="home_product_item col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="home_product_item_img">
+                                <img
+                                    src="./İmg/home_img/product_img/product-4.jpg.webp"
+                                    alt>
+                                <div class="product_tools">
+                                    <ul>
+                                        <li><i
+                                                class="fa-regular fa-heart"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-scale-unbalanced-flip"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-magnifying-glass"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="home_product_item_info_container">
+                                <div class="product_cart_button">
+                                    <a href>
+                                        + Səbətə Əlave Et
+                                    </a>
+                                </div>
+                                <div class="product_title">
+                                    <h6>
+                                        Polo Sweatshirt
+                                    </h6>
+                                </div>
+                                <div class="product_rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product_price">
+                                    <span>
+                                        <i
+                                            class="fa-solid fa-manat-sign"></i>36.00
+                                    </span>
+                                </div>
+                                <div class="product_color">
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio blue"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio green"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio brown"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="home_product_item col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="home_product_item_img">
+                                <img
+                                    src="./İmg/home_img/product_img/product-1.jpg.webp"
+                                    alt>
+                                <div class="product_tools">
+                                    <ul>
+                                        <li><i
+                                                class="fa-regular fa-heart"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-scale-unbalanced-flip"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-magnifying-glass"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="home_product_item_info_container">
+                                <div class="product_cart_button">
+                                    <a href>
+                                        + Səbətə Əlave Et
+                                    </a>
+                                </div>
+                                <div class="product_title">
+                                    <h6>
+                                        Piqué Biker Shoes
+                                    </h6>
+                                </div>
+                                <div class="product_rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product_price">
+                                    <span>
+                                        <i
+                                            class="fa-solid fa-manat-sign"></i>45.00
+                                    </span>
+                                </div>
+                                <div class="product_color">
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio blue"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio green"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio brown"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="home_product_item col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="home_product_item_img">
+                                <img
+                                    src="./İmg/home_img/product_img/product-2.jpg.webp"
+                                    alt>
+                                <div class="product_tools">
+                                    <ul>
+                                        <li><i
+                                                class="fa-regular fa-heart"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-scale-unbalanced-flip"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-magnifying-glass"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="home_product_item_info_container">
+                                <div class="product_cart_button">
+                                    <a href>
+                                        + Səbətə Əlave Et
+                                    </a>
+                                </div>
+                                <div class="product_title">
+                                    <h6>
+                                        Piqué Biker Jacket
+                                    </h6>
+                                </div>
+                                <div class="product_rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product_price">
+                                    <span>
+                                        <i
+                                            class="fa-solid fa-manat-sign"></i>67.99
+                                    </span>
+                                </div>
+                                <div class="product_color">
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio blue"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio green"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio brown"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="home_product_item col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="home_product_item_img">
+                                <img
+                                    src="./İmg/home_img/product_img/product-3.jpg.webp"
+                                    alt>
+                                <div class="product_tools">
+                                    <ul>
+                                        <li><i
+                                                class="fa-regular fa-heart"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-scale-unbalanced-flip"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-magnifying-glass"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="home_product_item_info_container">
+                                <div class="product_cart_button">
+                                    <a href>
+                                        + Səbətə Əlave Et
+                                    </a>
+                                </div>
+                                <div class="product_title">
+                                    <h6>
+                                        Nike BluePrince
+                                    </h6>
+                                </div>
+                                <div class="product_rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product_price">
+                                    <span>
+                                        <i
+                                            class="fa-solid fa-manat-sign"></i>105.50
+                                    </span>
+                                </div>
+                                <div class="product_color">
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio blue"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio green"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio brown"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="home_product_item col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="home_product_item_img">
+                                <img
+                                    src="./İmg/home_img/product_img/product-4.jpg.webp"
+                                    alt>
+                                <div class="product_tools">
+                                    <ul>
+                                        <li><i
+                                                class="fa-regular fa-heart"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-scale-unbalanced-flip"></i></li>
+                                        <li><i
+                                                class="fa-solid fa-magnifying-glass"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="home_product_item_info_container">
+                                <div class="product_cart_button">
+                                    <a href>
+                                        + Səbətə Əlave Et
+                                    </a>
+                                </div>
+                                <div class="product_title">
+                                    <h6>
+                                        Polo Sweatshirt
+                                    </h6>
+                                </div>
+                                <div class="product_rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="product_price">
+                                    <span>
+                                        <i
+                                            class="fa-solid fa-manat-sign"></i>36.00
+                                    </span>
+                                </div>
+                                <div class="product_color">
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio blue"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio green"></button>
+                                    <button id="color_button"
+                                        onclick="activeColor()"
+                                        class="radio brown"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop_product_bottom">
+                        <a class="active_page-number">1</a>
+                        <a >2</a>
+                        <a >3</a>
+                        ...
+                        <a >21</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer_container">
+                <div class="footer_about col-lg-4 col-md-6 col-sm-12 col-12">
+                    <img src="./İmg/footer_img/footer-logo.png.webp" alt="logo">
+                    <p>
+                        The customer is at the heart of our unique business
+                        model, which includes design.
+                    </p>
+                    <img src="./İmg/footer_img/payment.png.webp"
+                        alt="payment_method">
+                </div>
+                <div class="footer_widget col-lg-2 col-md-3 col-sm-12 col-12">
+                    <h6>Alışveriş</h6>
+                    <ul>
+                        <li><a href="#">Geyim mağazası</a></li>
+                        <li><a href="#">Trend ayaqqabılar</a></li>
+                        <li><a href="#">Aksesuarlar</a></li>
+                        <li><a href="#">Satış</a></li>
+                    </ul>
+                </div>
+                <div class="footer_widget col-lg-2 col-md-3 col-sm-12 col-12">
+                    <h6>Alışveriş</h6>
+                    <ul>
+                        <li><a href="#">Bizimlə əlaqə</a></li>
+                        <li><a href="#">Ödəmə metodları</a></li>
+                        <li><a href="#">Çatdırılma</a></li>
+                        <li><a href="#">Qaytarma və Mübadilə</a></li>
+                    </ul>
+                </div>
+                <div class="footer_message col-md-12 col-sm-12 col-12">
+                    <h6>Xəbərlər</h6>
+                    <p>
+                        Yeni gələnlər, kitablar, satışlar və promosyonlar
+                        haqqında ilk xəbərdar olun!
+                    </p>
+                    <div class="message_input">
+                        <input type="text" placeholder="E-poçtunuz">
+                        <button>
+                            <i class="fa-solid fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_bottom_text">
+                        <p>
+                            Copyright © 2024 Bütün Hüquqlar Qorunur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Menu Script -->
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.menu_section')
+                sidebar.style.width = "100%"
+                sidebar.style.opacity = "1"
+            }
+            function hideSidebar() {
+                const sidebar = document.querySelector('.menu_section')
+                sidebar.style.width = "0px"
+                sidebar.style.opacity = "0"
+            }
+        </script>
+
+        <!-- Filter Script -->
+        <!-- Categories Script -->
+        <script>
+            function filter_categories_collapse() {
+                const filter_list=document.querySelector(".filter_categories");
+                if (filter_list.style.height === "280px") {
+                    filter_list.style.height = "50px";
+                    filter_list.style.transition = "all 0.3s";
+                }else{
+                    filter_list.style.height = "280px";
+                    }
+            }
+
+            function filter_branding_collapse() {
+                const filter_list=document.querySelector(".filter_branding");
+                if (filter_list.style.height === "185px") {
+                    filter_list.style.height = "50px";
+                    filter_list.style.transition = "all 0.3s";
+                }else{
+                    filter_list.style.height = "185px";
+                    }
+            }
+
+            function filter_price_collapse() {
+                const filter_list=document.querySelector(".filter_price");
+                if (filter_list.style.height === "250px") {
+                    filter_list.style.height = "50px";
+                    filter_list.style.transition = "all 0.3s";
+                }else{
+                    filter_list.style.height = "250px";
+                    }
+            }
+            function filter_size_collapse() {
+                const filter_list=document.querySelector(".filter_size");
+                if (filter_list.style.height === "225px") {
+                    filter_list.style.height = "50px";
+                    filter_list.style.transition = "all 0.3s";
+                }else{
+                    filter_list.style.height = "225px";
+                    }
+            }
+            function filter_color_collapse() {
+                const filter_list=document.querySelector(".filter_color");
+                if (filter_list.style.height === "175px") {
+                    filter_list.style.height = "50px";
+                    filter_list.style.transition = "all 0.3s";
+                }else{
+                    filter_list.style.height = "175px";
+                    }
+            }
+            
+        </script>
+
+    </body>
+</html>

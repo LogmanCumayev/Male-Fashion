@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./Css/style.css">
+        <link rel="stylesheet" href="./Css/layout.css">
+        <link rel="stylesheet" href="./Css/responsive.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <div class="header_top_container">
+                <div class="header_top">
+                    <div class="header_top_content col-lg-6 col-md-7">
+                        <p>
+                            Pulsuz çatdırılma, 30 günlük qaytarma və ya geri
+                            qaytarma zəmanəti
+                        </p>
+                    </div>
+                    <div class="header_top_others col-lg-6 col-md-5">
+                        <ul>
+                            <li>Daxil olun</li>
+                            <li>FAQs</li>
+                            <li class="header_top_dropdown_li">AZN <i
+                                    class="fa-solid fa-angle-down"></i>
+                                <div class="header_top_dropdown_li_container">
+                                    <ul>
+                                        <li>USD</li>
+                                        <li>EUR</li>
+                                        <li>AZN</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="nav_container">
+                <div class="logo  col-md-3">
+                    <a href="./index.html">
+                        <img src="./İmg/home_img/logo.png.webp">
+                    </a>
+                </div>
+
+                <div class="nav col-md-6">
+                    <ul class="nav_list">
+                        <li><a href="./index.html"><span
+                                    class="hover-underline-animation  ">Əsas
+                                    Səhifə</span> </a></li>
+                        <li><a href="./shop.html"><span
+                                    class="hover-underline-animation">Mağaza</span></a></li>
+                        <li><a href="./about.html"><span
+                                    class="hover-underline-animation active">Hakkımızda</span></a></li>
+                        <li><a href="./blog.html"><span
+                                    class="hover-underline-animation">Blog</span></a></li>
+                        <li><a href="./contact.html"><span
+                                    class="hover-underline-animation">Əlaqə</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="others col-md-3">
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span>
+                            <i class="fa-solid fa-manat-sign"></i>0.00
+                        </span>
+                    </div>
+                    <div class="menu_button">
+                        <button onclick="showSidebar()"><i
+                                class="fa-solid fa-bars"></i></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Menu Container -->
+        <section class="menu_section">
+            <div class="menu_container">
+                <div class="exit_button_container">
+                    <button onclick="hideSidebar()" class="exit_button">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="menu_container_top">
+                    <ul>
+                        <li>Daxil olun</li>
+                        <li>FAQs</li>
+                        <li class="header_top_dropdown_li">AZN <i
+                                class="fa-solid fa-angle-down"></i>
+                            <div class="header_top_dropdown_li_container">
+                                <ul>
+                                    <li>USD</li>
+                                    <li>EUR</li>
+                                    <li>AZN</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu_container_others">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-heart"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span>
+                                <i class="fa-solid fa-manat-sign"></i>0.00
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu_container_list">
+                    <ul>
+                        <li><a href="./index.html"><span
+                                    class="hover-underline-animation ">Əsas
+                                    Səhifə</span> </a></li>
+                        <li><a href="./shop.html"><span
+                                    class="hover-underline-animation">Mağaza</span></a></li>
+                        <li><a href="./about.html"><span
+                                    class="hover-underline-animation active ">Hakkımızda</span></a></li>
+                        <li><a href="./blog.html"><span
+                                    class="hover-underline-animation">Blog</span></a></li>
+                        <li><a href="./contact.html"><span
+                                    class="hover-underline-animation">Əlaqə</span></a></li>
+                    </ul>
+                </div>
+                <div class="menu_container_bottom">
+                    <p>
+                        Pulsuz çatdırılma, 30 günlük qaytarma və ya geri
+                        qaytarma zəmanəti
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about_link_container">
+            <div class="link_container">
+                <h2>Hakkımızda</h2>
+                <ul>
+                    <li><a class="selected_link" href="./index.html">Əsas Səhifə
+                            <i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a href="./about.html">Hakkımızda </a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="about_hero">
+                <img class="col-md-8"
+                    src="./İmg/about_img/about_hero/about-us.jpg.webp">
+                <div class="hero_content">
+                    <div
+                        class=" hero_content_item col-lg-4 col-md-4 col-sm-6 col-12">
+                        <h4>Biz kimik ?</h4>
+                        <p>
+                            Kontekstli reklam proqramlarında bəzən ciddi
+                            siyasətlər olur ki, onlara da riayət etmək lazımdır.
+                            Nümunə olaraq Google-u götürək
+                        </p>
+                    </div>
+                    <div
+                        class=" hero_content_item col-lg-4 col-md-4 col-sm-6 col-12">
+                        <h4>Biz nə edirik?</h4>
+                        <p>
+                            In this digital generation where information can be
+                            easily obtained within seconds, business cards still
+                            have retained their importance.
+                        </p>
+                    </div>
+                    <div
+                        class="hero_content_item col-lg-4 col-md-4 col-sm-6 col-12">
+                        <h4>Niyə Bizi Seçməlisiniz?</h4>
+                        <p>
+                            İki və ya üç mərtəbəli ev, evimizin oturduğu torpaq
+                            parçasını artırmaq üçün ideal bir yoldur, lakin
+                            yaşlı və ya zəif insanlar üçün.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about_comment">
+            <div class="about_comment_text col-12 col-sm-12 col-md-6">
+                <span class="about_comment_text_icon">
+
+                </span>
+                <p>
+
+                    "“İşdən sonra çölə çıxırsan?
+                    Bütan qıvrım ütüünüzü
+                    ofisə aparın,
+                    onu qızdırın,
+                    ofisdən çıxmazdan
+                    əvvəl saçınızı
+                    düzəldin və
+                    evə qayıtmaq
+                    məcburiyyətində qalmayacaqsınız.""
+
+                </p>
+                <div class="about_comment_profil">
+                    <img
+                        src="./İmg/about_img/about_comment/testimonial-author.jpg.webp"
+                        alt>
+                    <h5>Augusta Schultz</h5>
+                    <span>
+                        Moda dizaynı
+                    </span>
+                </div>
+            </div>
+            <div class="about_comment_img col-12 col-sm-12 col-md-6">
+                <img
+                    src="./İmg/about_img/about_comment/testimonial-pic.jpg.webp"
+                    alt="caynik cay">
+            </div>
+        </section>
+
+        <!-- About company -->
+        <section>
+            <div class="about_prcnt">
+                <div class="about_prcnt_item">
+                    <h2>102</h2>
+                    <span>Bizim müştərilərimiz</span>
+                </div>
+                <div class="about_prcnt_item">
+                    <h2>30</h2>
+                    <span>Ümumi Kateqoriyalar</span>
+                </div>
+                <div class="about_prcnt_item">
+                    <h2>102</h2>
+                    <span>Ölkədə</span>
+                </div>
+                <div class="about_prcnt_item">
+                    <h2>98%</h2>
+                    <span>Xoşbəxt Müştəri</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section>
+            <div class="our_team">
+                <div class="our_team_header">
+                    <span>
+                        Bizim Komanda
+                    </span>
+                    <h2>
+                        Komandamızla Tanışın
+                    </h2>
+                </div>
+                <div class="our_team_container">
+                    <div class="our_team_container_item col-lg-3 col-md-5">
+                        <div class="our_team_container_item_img">
+                            <img src="./İmg/about_img/about_team/1 person.webp"
+                                alt>
+                        </div>
+                        <div class="our_team_container_item_text">
+                            <h4>John Smith</h4>
+                            <span>Fashion Design</span>
+                        </div>
+                    </div>
+
+                    <div class="our_team_container_item col-lg-3 col-md-5">
+                        <div class="our_team_container_item_img">
+                            <img src="./İmg/about_img/about_team/2 person.webp"
+                                alt>
+                        </div>
+                        <div class="our_team_container_item_text">
+                            <h4>Christine Wise</h4>
+                            <span>C.E.O</span>
+                        </div>
+                    </div>
+
+                    <div class="our_team_container_item col-lg-3 col-md-5">
+                        <div class="our_team_container_item_img">
+                            <img src="./İmg/about_img/about_team/3 person.webp"
+                                alt>
+                        </div>
+                        <div class="our_team_container_item_text">
+                            <h4>Sean Robbins</h4>
+                            <span>Manager</span>
+                        </div>
+                    </div>
+
+                    <div class="our_team_container_item col-lg-3 col-md-5">
+                        <div class="our_team_container_item_img">
+                            <img src="./İmg/about_img/about_team/4 person.webp"
+                                alt>
+                        </div>
+                        <div class="our_team_container_item_text">
+                            <h4>Lucy Myers</h4>
+                            <span>Delivery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Section -->
+        <section>
+            <div class="about_client">
+                <div class="client_header">
+                    <span>
+                        Partner
+                    </span>
+                    <h2>
+                        Xoşbəxt Müştərilər
+                    </h2>
+                </div>
+                <div class="clien_container">
+                    <div class="client_img">
+                        <img
+                            src="./İmg/about_img/about_clients/client-1.png.webp"
+                            alt>
+                    </div>
+                    <div class="client_img">
+                        <img
+                            src="./İmg/about_img/about_clients/client-2.png.webp"
+                            alt>
+                    </div>
+                    <div class="client_img">
+                        <img
+                            src="./İmg/about_img/about_clients/client-3.png.webp"
+                            alt>
+                    </div>
+                    <div class="client_img">
+                        <img
+                            src="./İmg/about_img/about_clients/client-4.png.webp"
+                            alt>
+                    </div>
+                    <div class="client_img">
+                        <img
+                            src="./İmg/about_img/about_clients/client-5.png.webp"
+                            alt>
+                    </div>
+                    <div class="client_img">
+                        <img
+                            src="./İmg/about_img/about_clients/client-6.png.webp"
+                            alt>
+                    </div>
+                    <div class="client_img">
+                        <img
+                            src="./İmg/about_img/about_clients/client-7.png.webp"
+                            alt>
+                    </div>
+                    <div class="client_img">
+                        <img
+                            src="./İmg/about_img/about_clients/client-8.png.webp"
+                            alt>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Script -->
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.menu_section')
+                sidebar.style.width = "100%"
+                sidebar.style.opacity = "1"
+            }
+            function hideSidebar() {
+                const sidebar = document.querySelector('.menu_section')
+                sidebar.style.width = "0px"
+                sidebar.style.opacity = "0"
+            }
+        </script>
+
+        <footer>
+            <div class="footer_container">
+                <div class="footer_about col-lg-3 col-md-6 col-sm-6 col-12">
+                    <img src="./İmg/footer_img/footer-logo.png.webp" alt="logo">
+                    <p>
+                        The customer is at the heart of our unique business
+                        model, which includes design.
+                    </p>
+                    <img src="./İmg/footer_img/payment.png.webp"
+                        alt="payment_method">
+                </div>
+                <div class="footer_widget col-lg-2 col-md-3 col-sm-6 col-12">
+                    <h6>Alışveriş</h6>
+                    <ul>
+                        <li><a href="#">Geyim mağazası</a></li>
+                        <li><a href="#">Trend ayaqqabılar</a></li>
+                        <li><a href="#">Aksesuarlar</a></li>
+                        <li><a href="#">Satış</a></li>
+                    </ul>
+                </div>
+                <div class="footer_widget col-lg-2 col-md-3 col-sm-6 col-12">
+                    <h6>Alışveriş</h6>
+                    <ul>
+                        <li><a href="#">Bizimlə əlaqə</a></li>
+                        <li><a href="#">Ödəmə metodları</a></li>
+                        <li><a href="#">Çatdırılma</a></li>
+                        <li><a href="#">Qaytarma və Mübadilə</a></li>
+                    </ul>
+                </div>
+                <div class="footer_message col-md-12 col-sm-6 col-12">
+                    <h6>Xəbərlər</h6>
+                    <p>
+                        Yeni gələnlər, kitablar, satışlar və promosyonlar
+                        haqqında ilk xəbərdar olun!
+                    </p>
+                    <div class="message_input">
+                        <input type="text" placeholder="E-poçtunuz">
+                        <button>
+                            <i class="fa-solid fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_bottom_text">
+                        <p>
+                            Copyright © 2024 Bütün Hüquqlar Qorunur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

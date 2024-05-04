@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./Css/style.css">
+        <link rel="stylesheet" href="./Css/layout.css">
+        <link rel="stylesheet" href="./Css/responsive.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <div class="header_top_container">
+                <div class="header_top">
+                    <div class="header_top_content col-lg-6 col-md-7">
+                        <p>
+                            Pulsuz çatdırılma, 30 günlük qaytarma və ya geri
+                            qaytarma zəmanəti
+                        </p>
+                    </div>
+                    <div class="header_top_others col-lg-6 col-md-5">
+                        <ul>
+                            <li>Daxil olun</li>
+                            <li>FAQs</li>
+                            <li class="header_top_dropdown_li">AZN <i
+                                    class="fa-solid fa-angle-down"></i>
+                                <div class="header_top_dropdown_li_container">
+                                    <ul>
+                                        <li>USD</li>
+                                        <li>EUR</li>
+                                        <li>AZN</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="nav_container">
+                <div class="logo  col-md-3">
+                    <a href="./index.html">
+                        <img src="./İmg/home_img/logo.png.webp">
+                    </a>
+                </div>
+
+                <div class="nav col-md-6">
+                    <ul class="nav_list">
+                        <li><a href="./index.html"><span
+                                    class="hover-underline-animation  ">Əsas
+                                    Səhifə</span> </a></li>
+                        <li><a href="./shop.html"><span
+                                    class="hover-underline-animation">Mağaza</span></a></li>
+                        <li><a href="./about.html"><span
+                                    class="hover-underline-animation ">Hakkımızda</span></a></li>
+                        <li><a href="./blog.html"><span
+                                    class="hover-underline-animation">Blog</span></a></li>
+                        <li><a href="./contact.html"><span
+                                    class="hover-underline-animation active">Əlaqə</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="others col-md-3">
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span>
+                            <i class="fa-solid fa-manat-sign"></i>0.00
+                        </span>
+                    </div>
+                    <div class="menu_button">
+                        <button onclick="showSidebar()"><i
+                                class="fa-solid fa-bars"></i></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Menu Container -->
+        <section class="menu_section">
+            <div class="menu_container">
+                <div class="exit_button_container">
+                    <button onclick="hideSidebar()" class="exit_button">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="menu_container_top">
+                    <ul>
+                        <li>Daxil olun</li>
+                        <li>FAQs</li>
+                        <li class="header_top_dropdown_li">AZN <i
+                                class="fa-solid fa-angle-down"></i>
+                            <div class="header_top_dropdown_li_container">
+                                <ul>
+                                    <li>USD</li>
+                                    <li>EUR</li>
+                                    <li>AZN</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu_container_others">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-heart"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span>
+                                <i class="fa-solid fa-manat-sign"></i>0.00
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu_container_list">
+                    <ul>
+                        <li><a href="./index.html"><span
+                                    class="hover-underline-animation ">Əsas
+                                    Səhifə</span> </a></li>
+                        <li><a href="./shop.html"><span
+                                    class="hover-underline-animation">Mağaza</span></a></li>
+                        <li><a href="./about.html"><span
+                                    class="hover-underline-animation ">Hakkımızda</span></a></li>
+                        <li><a href="./blog.html"><span
+                                    class="hover-underline-animation">Blog</span></a></li>
+                        <li><a href="./contact.html"><span
+                                    class="hover-underline-animation active">Əlaqə</span></a></li>
+                    </ul>
+                </div>
+                <div class="menu_container_bottom">
+                    <p>
+                        Pulsuz çatdırılma, 30 günlük qaytarma və ya geri
+                        qaytarma zəmanəti
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact_map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.3451321737984!2d49.85387277586573!3d40.37904277144573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dd42d26ad8d%3A0x2aa807745685f89!2sAdnsu!5e0!3m2!1str!2saz!4v1714763324935!5m2!1str!2saz"
+                width="1920" height="600" style="border:0;" allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section>
+            <div class="contact_container">
+                <div class="contact_info">
+                    <span>Məlumat</span>
+                    <h2>
+                        Bizimlə Əlaqə
+                    </h2>
+                    <p class="contact_p ">
+                        Yüksək səviyyəli interyer podratçısı kimi başlayan bir
+                        şirkətdən gözlədiyiniz kimi, biz ciddi diqqət yetiririk.
+                    </p>
+                    <h4>
+                        Amerika
+                    </h4>
+                    <p>195 E Parker Square Dr, Parker, CO 801</p>
+                    <p>+43 982-314-0958</p>
+                    <h4>
+                        Fransa
+                    </h4>
+                    <p>109 Avenue Léon, 63 Clermont-Ferrand</p>
+                    <p>+12 345-423-9893</p>
+                </div>
+                <div class="contact_form">
+                    <input type="text" placeholder="Ad">
+                    <input type="text" placeholder="Email">
+                    <textarea name id placeholder="Mesaj"></textarea>
+                    <button>
+                        Mesaj Gönder
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer_container">
+                <div class="footer_about col-lg-3 col-md-6 col-sm-6 col-12">
+                    <img src="./İmg/footer_img/footer-logo.png.webp" alt="logo">
+                    <p>
+                        The customer is at the heart of our unique business
+                        model, which includes design.
+                    </p>
+                    <img src="./İmg/footer_img/payment.png.webp"
+                        alt="payment_method">
+                </div>
+                <div class="footer_widget col-lg-2 col-md-3 col-sm-6 col-12">
+                    <h6>Alışveriş</h6>
+                    <ul>
+                        <li><a href="#">Geyim mağazası</a></li>
+                        <li><a href="#">Trend ayaqqabılar</a></li>
+                        <li><a href="#">Aksesuarlar</a></li>
+                        <li><a href="#">Satış</a></li>
+                    </ul>
+                </div>
+                <div class="footer_widget col-lg-2 col-md-3 col-sm-6 col-12">
+                    <h6>Alışveriş</h6>
+                    <ul>
+                        <li><a href="#">Bizimlə əlaqə</a></li>
+                        <li><a href="#">Ödəmə metodları</a></li>
+                        <li><a href="#">Çatdırılma</a></li>
+                        <li><a href="#">Qaytarma və Mübadilə</a></li>
+                    </ul>
+                </div>
+                <div class="footer_message col-md-12 col-sm-6 col-12">
+                    <h6>Xəbərlər</h6>
+                    <p>
+                        Yeni gələnlər, kitablar, satışlar və promosyonlar
+                        haqqında ilk xəbərdar olun!
+                    </p>
+                    <div class="message_input">
+                        <input type="text" placeholder="E-poçtunuz">
+                        <button>
+                            <i class="fa-solid fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_bottom_text">
+                        <p>
+                            Copyright © 2024 Bütün Hüquqlar Qorunur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Menu Script -->
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.menu_section')
+                sidebar.style.width = "100%"
+                sidebar.style.opacity = "1"
+            }
+            function hideSidebar() {
+                const sidebar = document.querySelector('.menu_section')
+                sidebar.style.width = "0px"
+                sidebar.style.opacity = "0"
+            }
+        </script>
+    </body>
+</html>

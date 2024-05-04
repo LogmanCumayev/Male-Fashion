@@ -1,44 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./Css/style.css">
-    <link rel="stylesheet" href="./Css/layout.css">
-    <link rel="stylesheet" href="./Css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Link Swiper Css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./Css/style.css">
+        <link rel="stylesheet" href="./Css/layout.css">
+        <link rel="stylesheet" href="./Css/responsive.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Link Swiper Css -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-</head>
+    </head>
 
-<body>
-    <header>
-        <div class="nav_container">
-            <div class="logo">
-                <img src="./İmg/home_img/logo.png.webp">
+    <body>
+        <header>
+            <div class="header_top_container">
+                <div class="header_top">
+                    <div class="header_top_content col-lg-6 col-md-7">
+                        <p>
+                            Pulsuz çatdırılma, 30 günlük qaytarma və ya geri
+                            qaytarma zəmanəti
+                        </p>
+                    </div>
+                    <div class="header_top_others col-lg-6 col-md-5">
+                        <ul>
+                            <li>Daxil olun</li>
+                            <li>FAQs</li>
+                            <li class="header_top_dropdown_li">AZN <i
+                                    class="fa-solid fa-angle-down"></i>
+                                <div class="header_top_dropdown_li_container">
+                                    <ul>
+                                        <li>USD</li>
+                                        <li>EUR</li>
+                                        <li>AZN</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
             </div>
+            <div class="nav_container">
+                <div class="logo  col-md-3">
+                    <a href="./index.html">
+                    <img src="./İmg/home_img/logo.png.webp">
+                    </a>
+                </div>
 
-            <div class="nav">
-                <ul class="nav_list">
-                    <li><a href="#"><span class="hover-underline-animation active">Əsas
-                                Səhifə</span> </a></li>
-                    <li><a href="#"><span class="hover-underline-animation">Mağaza</span></a></li>
-                    <li><a href="#"><span class="hover-underline-animation">Hakkımızda</span></a></li>
-                    <li><a href="#"><span class="hover-underline-animation">Blog</span></a></li>
-                    <li><a href="#"><span class="hover-underline-animation">Əlaqə</span></a></li>
-                </ul>
+                <div class="nav col-md-6">
+                    <ul class="nav_list">
+                        <li><a href="./index.html"><span
+                                    class="hover-underline-animation active ">Əsas
+                                    Səhifə</span> </a></li>
+                        <li><a href="./shop.html"><span
+                                    class="hover-underline-animation">Mağaza</span></a></li>
+                        <li><a href="./about.html"><span
+                                    class="hover-underline-animation ">Hakkımızda</span></a></li>
+                        <li><a href="./blog.html"><span
+                                    class="hover-underline-animation">Blog</span></a></li>
+                        <li><a href="./contact.html"><span
+                                    class="hover-underline-animation">Əlaqə</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="others col-md-3">
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="favorite">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span>
+                            <i class="fa-solid fa-manat-sign"></i>0.00
+                        </span>
+                    </div>
+                    <div class="menu_button">
+                        <button onclick="showSidebar()"><i
+                                class="fa-solid fa-bars"></i></button>
+                    </div>
+                </div>
             </div>
+        </header>
+
+        <!-- Menu Container -->
+        <section class="menu_section">
             <div class="menu_container">
+                <div class="exit_button_container">
+                    <button onclick="hideSidebar()" class="exit_button">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="menu_container_top">
+                    <ul>
+                        <li>Daxil olun</li>
+                        <li>FAQs</li>
+                        <li class="header_top_dropdown_li">AZN <i
+                                class="fa-solid fa-angle-down"></i>
+                            <div class="header_top_dropdown_li_container">
+                                <ul>
+                                    <li>USD</li>
+                                    <li>EUR</li>
+                                    <li>AZN</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
                 <div class="menu_container_others">
                     <ul>
-                        <li>
-                            <button onclick="hideSidebar()"><i class="fa-solid fa-xmark"></i></button>
-                        </li>
                         <li>
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </li>
@@ -47,189 +125,573 @@
                         </li>
                         <li>
                             <i class="fa-solid fa-bag-shopping"></i>
+                            <span>
+                                <i class="fa-solid fa-manat-sign"></i>0.00
+                            </span>
                         </li>
                     </ul>
                 </div>
                 <div class="menu_container_list">
                     <ul>
-                        <li><a href="/index.html"><span class="hover-underline-animation active">Əsas
+                        <li><a href="./index.html"><span
+                                    class="hover-underline-animation active">Əsas
                                     Səhifə</span> </a></li>
-                        <li><a href="#"><span class="hover-underline-animation">Mağaza</span></a></li>
-                        <li><a href="#"><span class="hover-underline-animation">Hakkımızda</span></a></li>
-                        <li><a href="#"><span class="hover-underline-animation">Blog</span></a></li>
-                        <li><a href="#"><span class="hover-underline-animation">Əlaqə</span></a></li>
+                        <li><a href="./shop.html"><span
+                                    class="hover-underline-animation">Mağaza</span></a></li>
+                        <li><a href="./about.html"><span
+                                    class="hover-underline-animation ">Hakkımızda</span></a></li>
+                        <li><a href="./blog.html"><span
+                                    class="hover-underline-animation">Blog</span></a></li>
+                        <li><a href="./contact.html"><span
+                                    class="hover-underline-animation">Əlaqə</span></a></li>
                     </ul>
                 </div>
+                <div class="menu_container_bottom">
+                    <p>
+                        Pulsuz çatdırılma, 30 günlük qaytarma və ya geri
+                        qaytarma zəmanəti
+                    </p>
+                </div>
             </div>
+        </section>
 
-            <div class="others">
-                <div class="menu_button">
-                    <button onclick="showSidebar()"><i class="fa-solid fa-bars"></i></button>
+        <section class="slider_section">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./İmg/home_img/slider_img/hero-1.jpg.webp" />
+                        <div class="swiper-slide_content">
+                            <div class="swiper-slide_content_info">
+                                <span>Qış Kolleksiyası</span>
+                                <h2>Payız-Qış kolleksiyaları 2030</h2>
+                                <p>Lüks əsas əşyalar yaradan mütəxəssis etiket.
+                                    Etik cəhətdən sarsılmaz bir şəkildə
+                                    hazırlanmışdır
+                                    müstəsna keyfiyyətə sadiqlik.</p>
+                                <button>
+                                    Indi Al<i
+                                        class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                            <div class="swiper-slide_content_social_media">
+                                <ul>
+                                    <li><i
+                                            class="fa-brands fa-facebook-f"></i></li>
+                                    <li><i
+                                            class="fa-brands fa-twitter"></i></li>
+                                    <li><i
+                                            class="fa-brands fa-pinterest"></i></li>
+                                    <li><i
+                                            class="fa-brands fa-instagram"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./İmg/home_img/slider_img/hero-2.jpg.webp" />
+                        <div class="swiper-slide_content">
+                            <div class="swiper-slide_content_info">
+                                <span>Yay Kolleksiyası</span>
+                                <h2>Yaz-Yay kolleksiyaları 2030</h2>
+                                <p>Lüks əsas əşyalar yaradan mütəxəssis etiket.
+                                    Etik cəhətdən sarsılmaz bir şəkildə
+                                    hazırlanmışdır
+                                    müstəsna keyfiyyətə sadiqlik.</p>
+                                <button>
+                                    Indi Al<i
+                                        class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                            <div class="swiper-slide_content_social_media">
+                                <ul>
+                                    <li><i
+                                            class="fa-brands fa-facebook-f"></i></li>
+                                    <li><i
+                                            class="fa-brands fa-twitter"></i></li>
+                                    <li><i
+                                            class="fa-brands fa-pinterest"></i></li>
+                                    <li><i
+                                            class="fa-brands fa-instagram"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="swiper-button-next swiper_page_buttons"></div>
+                <div class="swiper-button-prev swiper_page_buttons"></div>
+            </div>
+        </section>
+
+        <section class="items_show_section">
+            <div class="items_show_container">
+                <div class="items_show_clothes">
+                    <div class="clothes_container">
+                        <img src="./İmg/home_img/items_show/clothes.webp"
+                            alt="clothes">
+                        <div class="clothes_content">
+                            <h2 class="item_show_h2">
+                                Geyim Kolleksiyonları 2030
+                            </h2>
+                            <a href class="item_show_a">
+                                Indi Al
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="favorite">
-                    <i class="fa-regular fa-heart"></i>
+                <div class="items_show_glass">
+                    <div class="glass_container">
+                        <img src="./İmg/home_img/items_show/glass.webp"
+                            alt="glass">
+                        <div class="glass_content">
+                            <h2 class="item_show_h2">Aksesuarlar</h2>
+                            <a href class="item_show_a">
+                                Indi Al
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="cart">
-                    <i class="fa-solid fa-bag-shopping"></i>
+                <div class="items_show_shoes">
+                    <div class="shoes_container">
+                        <img src="./İmg/home_img/items_show/shoes.webp"
+                            alt="shoes">
+                        <div class="shoes_content">
+                            <h2 class="item_show_h2">Yaz Ayaqqabılar 2030</h2>
+                            <a href class="item_show_a">Indi Al</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home_product_section">
+            <div class="home_product_container">
+                <div class="home_product_header">
+                    <ul>
+                        <li class="home_product_active"><span>Best
+                                Seller</span></li>
+                        <li><span>New Arrivals</span></li>
+                        <li><span>Hot Seller</span></li>
+                    </ul>
+                </div>
+                <div id="best_seller_container">
+
+                    <div
+                        class="home_product_item col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="home_product_item_img">
+                            <img
+                                src="./İmg/home_img/product_img/product-1.jpg.webp"
+                                alt>
+                            <div class="product_tools">
+                                <ul>
+                                    <li><i class="fa-regular fa-heart"></i></li>
+                                    <li><i
+                                            class="fa-solid fa-scale-unbalanced-flip"></i></li>
+                                    <li><i
+                                            class="fa-solid fa-magnifying-glass"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="home_product_item_info_container">
+                            <div class="product_cart_button">
+                                <a href>
+                                    + Səbətə Əlave Et
+                                </a>
+                            </div>
+                            <div class="product_title">
+                                <h6>
+                                    Piqué Biker Shoes
+                                </h6>
+                            </div>
+                            <div class="product_rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product_price">
+                                <span>
+                                    <i class="fa-solid fa-manat-sign"></i>45.00
+                                </span>
+                            </div>
+                            <div class="product_color">
+                                <button id="color_button"
+                                    onclick="activeColor()"
+                                    class="radio blue"></button>
+                                <button id="color_button"
+                                    onclick="activeColor()"
+                                    class="radio green"></button>
+                                <button id="color_button"
+                                    onclick="activeColor()"
+                                    class="radio brown"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="home_product_item col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="home_product_item_img">
+                            <img
+                                src="./İmg/home_img/product_img/product-2.jpg.webp"
+                                alt>
+                            <div class="product_tools">
+                                <ul>
+                                    <li><i class="fa-regular fa-heart"></i></li>
+                                    <li><i
+                                            class="fa-solid fa-scale-unbalanced-flip"></i></li>
+                                    <li><i
+                                            class="fa-solid fa-magnifying-glass"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="home_product_item_info_container">
+                            <div class="product_cart_button">
+                                <a href>
+                                    + Səbətə Əlave Et
+                                </a>
+                            </div>
+                            <div class="product_title">
+                                <h6>
+                                    Piqué Biker Jacket
+                                </h6>
+                            </div>
+                            <div class="product_rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product_price">
+                                <span>
+                                    <i class="fa-solid fa-manat-sign"></i>67.99
+                                </span>
+                            </div>
+                            <div class="product_color">
+                                <button id="color_button"
+                                    onclick="activeColor()"
+                                    class="radio blue"></button>
+                                <button id="color_button"
+                                    onclick="activeColor()"
+                                    class="radio green"></button>
+                                <button id="color_button"
+                                    onclick="activeColor()"
+                                    class="radio brown"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="home_product_item col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="home_product_item_img">
+                            <img
+                                src="./İmg/home_img/product_img/product-3.jpg.webp"
+                                alt>
+                            <div class="product_tools">
+                                <ul>
+                                    <li><i class="fa-regular fa-heart"></i></li>
+                                    <li><i
+                                            class="fa-solid fa-scale-unbalanced-flip"></i></li>
+                                    <li><i
+                                            class="fa-solid fa-magnifying-glass"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="home_product_item_info_container">
+                            <div class="product_cart_button">
+                                <a href>
+                                    + Səbətə Əlave Et
+                                </a>
+                            </div>
+                            <div class="product_title">
+                                <h6>
+                                    Nike BluePrince
+                                </h6>
+                            </div>
+                            <div class="product_rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product_price">
+                                <span>
+                                    <i class="fa-solid fa-manat-sign"></i>105.50
+                                </span>
+                            </div>
+                            <div class="product_color">
+                                <button id="color_button"
+                                    onclick="activeColor()"
+                                    class="radio blue"></button>
+                                <button id="color_button"
+                                    onclick="activeColor()"
+                                    class="radio green"></button>
+                                <button id="color_button"
+                                    onclick="activeColor()"
+                                    class="radio brown"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="home_product_item col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="home_product_item_img">
+                            <img
+                                src="./İmg/home_img/product_img/product-4.jpg.webp"
+                                alt>
+                            <div class="product_tools">
+                                <ul>
+                                    <li><i class="fa-regular fa-heart"></i></li>
+                                    <li><i
+                                            class="fa-solid fa-scale-unbalanced-flip"></i></li>
+                                    <li><i
+                                            class="fa-solid fa-magnifying-glass"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="home_product_item_info_container">
+                            <div class="product_cart_button">
+                                <a href>
+                                    + Səbətə Əlave Et
+                                </a>
+                            </div>
+                            <div class="product_title">
+                                <h6>
+                                    Polo Sweatshirt
+                                </h6>
+                            </div>
+                            <div class="product_rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product_price">
+                                <span>
+                                    <i class="fa-solid fa-manat-sign"></i>36.00
+                                </span>
+                            </div>
+                            <div class="product_color">
+                                <button id="color_button"
+                                    onclick="activeColor()"
+                                    class="radio blue"></button>
+                                <button id="color_button"
+                                    onclick="activeColor()"
+                                    class="radio green"></button>
+                                <button id="color_button"
+                                    onclick="activeColor()"
+                                    class="radio brown"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home_ads_section">
+            <div class="home_ads_container">
+                <div class="ads_categories">
+                    <div class="figure"></div>
+                    <ul class="ads_categories_list">
+                        <li><span>İsti Geyimlər</span></li>
+                        <li class="selected_ads"><span>Ayaqqabı
+                                Kolleksiyası</span></li>
+                        <li><span>Aksesuarlar </span></li>
+                    </ul>
+                </div>
+                <div class="ads_img ">
+                    <img src="./İmg/home_img/home_ads/product-sale.png (1).webp"
+                        alt>
+                    <div class="circle"><span>29.99 AZN</span></div>
+
+                </div>
+                <div class="ads_content">
                     <span>
-                        0.00AZN
+                        Həftənin Fürsəti
                     </span>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section class="slider_section">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="./İmg/home_img/slider_img/hero-1.jpg.webp" />
-                    <div class="swiper-slide_content">
-                        <div class="swiper-slide_content_info">
-                            <span>Yay Kolleksiyası</span>
-                            <h2>Payız-Qış kolleksiyaları 2030</h2>
-                            <p>Lüks əsas əşyalar yaradan mütəxəssis etiket.
-                                Etik cəhətdən sarsılmaz bir şəkildə
-                                hazırlanmışdır
-                                müstəsna keyfiyyətə sadiqlik.</p>
-                            <button>
-                                Indi Al<i class="fa-solid fa-arrow-right"></i>
-                            </button>
+                    <h2>
+                        Çoxcibli Sinə Çantası Qara
+                    </h2>
+                    <div class="ads_content_timer">
+                        <div class="timer_item">
+                            <span>30:</span>
+                            <p>Gün</p>
                         </div>
-                        <div class="swiper-slide_content_social_media">
-                            <ul>
-                                <li><i class="fa-brands fa-facebook-f"></i></li>
-                                <li><i class="fa-brands fa-twitter"></i></li>
-                                <li><i class="fa-brands fa-pinterest"></i></li>
-                                <li><i class="fa-brands fa-instagram"></i></li>
-                            </ul>
+                        <div class="timer_item">
+                            <span>
+                                11:
+                            </span>
+                            <p>
+                                Saat
+                            </p>
                         </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./İmg/home_img/slider_img/hero-2.jpg.webp" />
-                    <div class="swiper-slide_content">
-                        <div class="swiper-slide_content_info">
-                            <span>Yay Kolleksiyası</span>
-                            <h2>Payız-Qış kolleksiyaları 2030</h2>
-                            <p>Lüks əsas əşyalar yaradan mütəxəssis etiket.
-                                Etik cəhətdən sarsılmaz bir şəkildə
-                                hazırlanmışdır
-                                müstəsna keyfiyyətə sadiqlik.</p>
-                            <button>
-                                Indi Al<i class="fa-solid fa-arrow-right"></i>
-                            </button>
+                        <div class="timer_item">
+                            <span>
+                                42:
+                            </span>
+                            <p>
+                                Dəqiqə
+                            </p>
                         </div>
-                        <div class="swiper-slide_content_social_media">
-                            <ul>
-                                <li><i class="fa-brands fa-facebook-f"></i></li>
-                                <li><i class="fa-brands fa-twitter"></i></li>
-                                <li><i class="fa-brands fa-pinterest"></i></li>
-                                <li><i class="fa-brands fa-instagram"></i></li>
-                            </ul>
+                        <div class="timer_item">
+                            <span>
+                                40
+                            </span>
+                            <p>
+                                Saniye
+                            </p>
                         </div>
                     </div>
+                    <button>
+                        İndi Al
+                    </button>
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </section>
+        </section>
 
-    <section class="items_show_section">
-        <div class="items_show_container">
-            <div class="items_show_clothes">
-                <div class="clothes_img">
-                    <img src="./İmg/home_img/items_show/clothes.webp" alt="clothes">
-                    <div class="clothes_content">
-                        <h2>Geyim Kolleksiyası 2030</h2>
-                        <button>Indi Al</button>
+        <section>
+            <div class="last_new_container">
+                <div class="our_team_header">
+                    <span>
+                        Son Xəbərlər
+                    </span>
+                    <h2>
+                        Moda Yeni Trendlər
+                    </h2>
+                </div>
+                <div class="blog_list">
+                    <div
+                        class="blog_list_item col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="blog_list_item_img">
+                            <img src="./İmg/blog_img/Blog_items/blog-1.jpg.webp"
+                                alt>
+                        </div>
+                        <div class="blog_list_item_content">
+                            <span><i class="fa-regular fa-calendar"></i> 16
+                                Fevral
+                                2020 </span>
+                            <h5>
+                                Ən yaxşı kofe hansıdır?
+                            </h5>
+                            <a href="#">
+                                Daha çox oxu
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="blog_list_item col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="blog_list_item_img">
+                            <img src="./İmg/blog_img/Blog_items/blog-2.jpg.webp"
+                                alt>
+                        </div>
+                        <div class="blog_list_item_content">
+                            <span><i class="fa-regular fa-calendar"></i> 28 Mart
+                                2019 </span>
+                            <h5>
+                                İlin Ən Yaraşıqlı Modeli
+                            </h5>
+                            <a href="#">
+                                Daha çox oxu
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="blog_list_item col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="blog_list_item_img">
+                            <img src="./İmg/blog_img/Blog_items/blog-3.jpg.webp"
+                                alt>
+                        </div>
+                        <div class="blog_list_item_content">
+                            <span><i class="fa-regular fa-calendar"></i> 12 İyun
+                                2019 </span>
+                            <h5>
+                                Sağlam Həyat,Sağlam Ruh!
+                            </h5>
+                            <a href="#">
+                                Daha çox oxu
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="items_show_glass">
-                <div class="glass_img">
-                    <img src="./İmg/home_img/items_show/glass.webp" alt="glass">
-                    <div class="glass_content">
-                        <h2>Eynek Kolleksiyası</h2>
+        </section>
+
+        <footer>
+            <div class="footer_container">
+                <div class="footer_about col-lg-3 col-md-6 col-sm-6 col-12">
+                    <img src="./İmg/footer_img/footer-logo.png.webp" alt="logo">
+                    <p>
+                        The customer is at the heart of our unique business
+                        model, which includes design.
+                    </p>
+                    <img src="./İmg/footer_img/payment.png.webp"
+                        alt="payment_method">
+                </div>
+                <div class="footer_widget col-lg-2 col-md-3 col-sm-6 col-12">
+                    <h6>Alışveriş</h6>
+                    <ul>
+                        <li><a href="#">Geyim mağazası</a></li>
+                        <li><a href="#">Trend ayaqqabılar</a></li>
+                        <li><a href="#">Aksesuarlar</a></li>
+                        <li><a href="#">Satış</a></li>
+                    </ul>
+                </div>
+                <div class="footer_widget col-lg-2 col-md-3 col-sm-6 col-12">
+                    <h6>Alışveriş</h6>
+                    <ul>
+                        <li><a href="#">Bizimlə əlaqə</a></li>
+                        <li><a href="#">Ödəmə metodları</a></li>
+                        <li><a href="#">Çatdırılma</a></li>
+                        <li><a href="#">Qaytarma və Mübadilə</a></li>
+                    </ul>
+                </div>
+                <div class="footer_message col-md-12 col-sm-6 col-12">
+                    <h6>Xəbərlər</h6>
+                    <p>
+                        Yeni gələnlər, kitablar, satışlar və promosyonlar
+                        haqqında ilk xəbərdar olun!
+                    </p>
+                    <div class="message_input">
+                        <input type="text" placeholder="E-poçtunuz">
+                        <button>
+                            <i class="fa-solid fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_bottom_text">
+                        <p>
+                            Copyright © 2024 Bütün Hüquqlar Qorunur.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="items_show_shoes">
-                <div class="shoes_img">
-                    <img src="./İmg/home_img/items_show/shoes.webp" alt="shoes">
-                    <div class="shoes_content">
-                        <h2>Ayaqqabı Kolleksiyası</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </footer>
 
-    <section class="home_product_section">
-        <div class="home_product_container">
-            <div class="home_product_header">
-                <ul>
-                    <li class=""><button onclick=""><span>Best Seller</span></button></li>
-                    <li class=""><button onclick=""><span>New Arrivals</span></button></li>
-                    <li class=""><button onclick=""><span>Hot Seller</span></button></li>
-                </ul>
-            </div>
+        <!-- Menu Script -->
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.menu_section')
+                sidebar.style.width = "100%"
+                sidebar.style.opacity = "1"
+            }
+            function hideSidebar() {
+                const sidebar = document.querySelector('.menu_section')
+                sidebar.style.width = "0px"
+                sidebar.style.opacity = "0"
+            }
+        </script>
 
-            <div id="best_seller_container">
-                <div class="home_product_item"></div>
-                <div class="home_product_item"></div>
-                <div class="home_product_item"></div>
-                <div class="home_product_item"></div>
-            </div>
-            <div id="new_arrivals_container" class="hidden"></div>
-            <div id="hot_sales_container" class="hidden"></div>
-        </div>
-    </section>
+        <!-- Swiper JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <section class="home_ads_section">
-        <div class="home_ads_container">
-            <div class="ads_categories">
-                <div class="figure"></div>
-                <ul class="ads_categories_list">
-                    <li><span>İsti Geyimlər</span></li>
-                    <li class="selected_ads"><span>Ayaqqabı Kolleksiyası</span></li>
-                    <li><span>Aksesuarlar </span></li>
-                </ul>
-            </div>
-            <div class="ads_img">
-                <img src="./İmg/home_img/home_ads/product-sale.png (1).webp" alt="">
-                <div class="circle"><span>29.99 AZN</span></div>
-
-            </div>
-            <div class="ads_content"></div>
-        </div>
-    </section>
-
-    <footer>
-        
-    </footer>
-
-    <!-- Menu Script -->
-    <script>
-        function showSidebar() {
-            const sidebar = document.querySelector('.menu_container')
-            sidebar.style.top = "20px"
-        }
-        function hideSidebar() {
-            const sidebar = document.querySelector('.menu_container')
-            sidebar.style.top = "-400px"
-        }
-    </script>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
+        <!-- Initialize Swiper -->
+        <script>
         var swiper = new Swiper(".mySwiper", {
             spaceBetween: 30,
             effect: "fade",
@@ -244,6 +706,13 @@
             },
         });
     </script>
-</body>
+
+        <script>
+        function activeColor() {
+            const active_button=document.getElementById('color_button')
+            const color_list=document.getElementsByClassName
+        }
+    </script>
+    </body>
 
 </html>
